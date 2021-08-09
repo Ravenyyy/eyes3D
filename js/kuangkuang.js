@@ -46,31 +46,6 @@ function init() {
     cube.rotation.y = gamma / 100;
     cube.rotation.x = beta / 100;
   }
-
-  // document.querySelector("#container").onclick = function () {
-  //   window.DeviceOrientationEvent.requestPermission().then((state) => {
-  //     switch (state) {
-  //       case "granted":
-  //         // you can do something
-  //         window.addEventListener(
-  //           "deviceorientation",
-  //           capture_orientation,
-  //           false
-  //         );
-  //         break;
-  //       case "denied":
-  //         alert("拒绝使用陀螺仪");
-  //         break;
-  //       case "prompt":
-  //         alert("其他行为");
-  //         break;
-  //     }
-  //   });
-  // };
-  window.addEventListener("deviceorientation", function (e) {
-    console.log(e.alpha, e.beta, e.gamma);
-    capture_orientation(e);
-  });
 }
 
 function addBox() {
@@ -110,7 +85,7 @@ function addLight() {
 }
 
 function loop() {
-  // requestAnimationFrame(loop);
+  requestAnimationFrame(loop);
 
   cube.rotation.y += 0.01;
 

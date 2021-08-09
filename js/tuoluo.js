@@ -23,7 +23,7 @@ function init() {
 
   // loadAllTexture(loadCarModel);
 
-  const geometry = new THREE.BoxGeometry(1.2, 1.2, 1.2);
+  const geometry = new THREE.BoxGeometry(0.6, 0.6, 0.6);
   const material = new THREE.MeshStandardMaterial({ color: 0x6698cb });
   material.metalness = 0.44;
   material.roughness = 0.4;
